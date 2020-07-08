@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register Page</title>
     <style>
 /* CSS is for Presentation */
 /* Import Google fonts */
@@ -11,56 +11,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@300;400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
+html {  
+height: 100%;  
+}
 
-/* Resets */
-body {
-    display: block;  
-    margin: 0;    
-    background-image: url("https://picsum.photos/id/1057/2000/2000");     
-/* 	  font-size: 12px; */
-   	line-height: 1.5; 
-    background-size: cover;    
-    font-family: "Karla", sans-serif; 
-    text-align: center;
-} 
-
-/* Header Section  */
-header {
-    display: flex;       
-    padding: 0.1em;    
+.header_container {
+   display: flex;    
+/*     margin: 0; */
+    padding: 0.1em;      
     background-image: url("https://picsum.photos/id/109/1500/1500");   
-    align-items: center;   
-    background-size: cover; 
+/*     align-items: center;    */
+    background-size: cover;  
+    font-family: "Karla", sans-serif;  
 
 }
 
-header h1 {
-  margin: 0;
-  padding: 0.5em;  
-  font-variant: small-caps;
-  font-size: 30px;
-  color: black;
-  font-family: "Karla", sans-serif;
+.header_container h1 {
 
-}
+   margin: 0; 
+   padding: 0.15em;   
+   font-variant: small-caps; 
+   font-size: 30px; 
+   color: black; 
+   font-family: "Karla", sans-serif; 
+} 
 
 nav {
   
   display: flex;
-  justify-content:center;
-  font-size: 35px;
-
+  justify-content:center; 
+  font-size: 25px;
    font-family: "Allura", sans-serif;
+ 
 }
 
 nav ul {
   display: flex; 
-  margin: 0;
+  margin: 0 ;
   list-style-type: none; 
+  padding: 24px 0px 5px; 
 }
 
 nav li {
-   margin-right: 40px;
+/*    margin-right: 20px; */
    list-style: none;
    text-decoration: none;
    display: inline;
@@ -68,49 +61,86 @@ nav li {
 
 nav a {
   padding: 0.75em 0em; 
-  display: block;
+  display: inline-block;
   color: black;
   text-decoration: none;
   text-align: center;
-  line-height: 30px;
+  line-height: 10px;
    margin-top: -10px;
    width: 100%;
+/*   word-spacing: 1px;  */
+   margin-right: 40px;
 }
 
-
-p {
-    font-size: 50px;
-    color: rebeccapurple;
-    font-family: "Kurale", sans-serif;
-}
-
-
-signbar ul {
-  display: flex;
+body {
+  height: 100%;
   margin: 0;
-  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  justify-items: center;
+  align-items: center;
+  background-image: url("https://picsum.photos/id/164/2000/2000");
+  
 }
 
-signbar li {
-   display: inline;    
+.container {
+  padding: 10px 10px ;
+  background-color: #f1f1f1;
+  margin: 50px 0;
+  border-radius: 7px; 
+  box-shadow: 0px 0px 5px 2px black; 
 }
-  
- signbar a {
-  padding: 1em 1em;
-  display: block;
-  background-image: url("https://picsum.photos/id/109/1500/1500");  
-/*   background-image: linear-gradient(lightblue, grey); */
-  border: 1px solid black;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  line-height: 30px;
-   margin-top: -10px;
-   width: 100%;
+ 
+.container h2 { 
+   margin: 0; 
+   padding: 0.5em;   
+   font-variant: small-caps; 
+   font-size: 30px; 
+   text-align: center
 } 
-  
-signbar a:hover {
-    background-image: linear-gradient(lightblue, red);
+
+input[type=text], input[type=submit], input[type=password] {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+
+   align-items: center;
+   width: 20%;
+}
+
+ 
+#signup_form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.register_box {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#form_submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Footer Section */
@@ -125,37 +155,71 @@ signbar a:hover {
   text-align: center;
    padding: 0.5em 0.5em;
 }
-
     </style>
 </head>
-<body>
-    <header>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <li class="fas fa-umbrella-beach fa-5x" style="font-size:50px;color: black;"></li>
-  <h1>Travel Experts</h1>
-</header>
-<main>
- <nav>
+</head>
+<header>
+  <div class="header_container">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+ <li class="fas fa-umbrella-beach fa-5x" style="font-size:50px;color: black;background-color: rgb(132, 165, 202);"></li>
+ <h1>Travel Experts</h1>
+  </div>
+
+<nav>
   <ul>
-    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
-    <li class="wide"></i><a href="#signup"><i class="fas fa-sign-in-alt"></i> Sign Up</a></li>
-    <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
-    <li><a href="#register"><i class="fa fa-registered" aria-hidden="true"></i> Register</a></li>
-  <li><a href="#register"><i class="fas fa-file-signature"></i></i> Contact Us </a></li>
+    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+    <li class="wide"></i><a href="login.html"><i class="fas fa-sign-in-alt"></i>Log In</a></li>
+    <li><a href="#gallery"><i class="fas fa-images"></i>Gallery</a></li>
+    <li><a href="register.html"> <i class="fa fa-registered" aria-hidden="true"></i>Register</a></li>
+  <li><a href="#contact"><i class="fas fa-file-signature"></i></i>Contact Us</a></li>
   </ul>
 </nav>
-   <p>Explore the whole world with travel experts!</p>   
-    
-  <signbar>
-  <ul>
-    <li><a class="signbar" href="#"></i> SIGN UP FOR FREE</a></ul>
-  </ul>
- </signbar>
-       </main>
+
+</header>  
+
+<body>
+ <main>
+   
+      <form id="signup_form">
+        
+       <div class="container">
+        
+
+        <h2>Register Page</h2>
+
+         <div>
+              <label for="fullname">Full Name</label>
+     <input type="text" name="name" id="fullname" class="register_box" placeholder="Full Name">
+       </div>
+                <div>
+     <label for="email">Email Address</label>
+         <input type="text" name="email" id="useremail" class="register_box" placeholder="Email Address">
+     </div>    
+          <div>
+     <label for="paasword">Password</label>
+       <input type="password" name="password" id="userpassword" class="register_box" placeholder="Password">
+       </div>
+     <label for="confirmpassword">Confirm Password</label>
+     <input type="password" name="confirmpassword" id="confirusermpassword" class="register_box" placeholder="Confirm Password">
+         
+     <input type="submit" value="Register" id="form_submit">
+       
+      <label>
+     <input type="checkbox" name="Subscribe" id="form_checkup"> Subscribe to Our Newsletter
+     </label>
+       </div>
+     
+      
+     </fieldldset>
+   
+   </form>
+ 
+     
+ </main>
+</body>
 
 <footer>
-  &copy; 2020 Vadim Savenkov
+ &copy; 2020 Vadim Savenkov
 </footer>
-
-</body>
+                                                              
 </html>
