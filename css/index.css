@@ -1,0 +1,135 @@
+/* Import 3 Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:ital,wght@0,100;0,200;0,500;0,700;1,100;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+/* Create and adjust header container */
+.header_container {
+  display: flex;    
+  margin: 0; 
+  padding: 0.15em;       
+  background-image: url("https://picsum.photos/id/10/1000/1000"); 
+  background-size: cover;    
+}
+
+/* Adjust header parameters inside the container */
+.header_container h1 {
+  margin: 0; 
+  padding: 0.15em;   
+  font-variant: small-caps; 
+  font-size: 25px; 
+  color: black; 
+  font-family: "Kurale", sans-serif; 
+} 
+
+/* Add navigation panel outside of header */
+
+nav {
+  display: flex;
+  justify-content:center; 
+  font-size: 25px;
+  font-family: "Allura", sans-serif;
+}
+
+nav ul {
+  display: flex; 
+  margin: 0 ;
+  list-style-type: none; 
+  padding: 24px 0px 5px; 
+}
+
+nav li {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+
+nav a {
+  padding: 0.75em 0em; 
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  text-align: center; 
+  width: 100%;
+  margin-right: 30px; 
+}
+
+/* Highlight home Tab */
+
+.highlight {
+  background-image: url("https://picsum.photos/id/144/500/500");  
+  float: right; 
+  height: 55px; 
+  min-width: 25px !important; 
+}
+
+.highlight:hover {
+  background-image: linear-gradient(lightblue, lightblue);
+}
+
+highlight:active {
+  background-image: linear-gradient(white, grey);
+}
+
+/* Hero section with login */
+
+body {
+  margin: 0; 
+  background-image: url("https://picsum.photos/id/1057/1600/1600"); 
+  
+}
+
+/* Adjust header container in the middle of Hero section */ 
+
+ 
+.container_h2 { 
+  padding: 0;    
+  font-variant: small-caps;   
+  font-size: 30px; 
+  text-align: center; 
+  margin: 120px 0;  
+  
+} 
+
+signupbar ul {
+  display: flex; 
+  margin: 10px; 
+  justify-content: center;
+}
+
+signupbar li {
+  display: inline;  
+}
+
+signupbar a {
+  padding: 1em 1em;  
+  background-image: url("https://picsum.photos/id/443/300/300");   
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  text-align: center; 
+  line-height: 30px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+} 
+
+signupbar a:hover {
+    background-image: linear-gradient(rebeccapurple, lightblue);
+}
+
+/* Footer Section settings */
+  footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  opacity: 0.8;  
+  color: black;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  font-family: "Kurale", sans-serif; 
+}
+    
