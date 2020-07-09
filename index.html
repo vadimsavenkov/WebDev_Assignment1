@@ -5,62 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-/* CSS is for Presentation */
-/* Import Google fonts */
+/* Import 3 Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:ital,wght@0,100;0,200;0,500;0,700;1,100;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@300;400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
+/* Create and adjust header container */
+.header_container {
+   display: flex;    
+   margin: 0; 
+   padding: 0.15em;       
+   background-image: url("https://picsum.photos/id/10/1000/1000"); 
+   background-size: cover;    
+}
 
-/* Resets */
-body {
-    display: block;  
-    margin: 0;    
-    background-image: url("https://picsum.photos/id/1057/2000/2000");     
-/* 	  font-size: 12px; */
-   	line-height: 1.5; 
-    background-size: cover;    
-    font-family: "Karla", sans-serif; 
-    text-align: center;
+/* Adjust header parameters inside the container */
+.header_container h1 {
+   margin: 0; 
+   padding: 0.15em;   
+   font-variant: small-caps; 
+   font-size: 25px; 
+   color: black; 
+   font-family: "Kurale", sans-serif; 
 } 
 
-/* Header Section  */
-header {
-    display: flex;       
-    padding: 0.1em;    
-    background-image: url("https://picsum.photos/id/109/1500/1500");   
-    align-items: center;   
-    background-size: cover; 
-
-}
-
-header h1 {
-  margin: 0;
-  padding: 0.5em;  
-  font-variant: small-caps;
-  font-size: 30px;
-  color: black;
-  font-family: "Karla", sans-serif;
-
-}
+/* Add navigation panel outside of header */
 
 nav {
-  
   display: flex;
-  justify-content:center;
-  font-size: 35px;
-
-   font-family: "Allura", sans-serif;
+  justify-content:center; 
+  font-size: 25px;
+  font-family: "Allura", sans-serif;
 }
 
 nav ul {
   display: flex; 
-  margin: 0;
+  margin: 0 ;
   list-style-type: none; 
+  padding: 24px 0px 5px; 
 }
 
 nav li {
-   margin-right: 40px;
    list-style: none;
    text-decoration: none;
    display: inline;
@@ -68,94 +53,109 @@ nav li {
 
 nav a {
   padding: 0.75em 0em; 
-  display: block;
+  display: inline-block;
   color: black;
   text-decoration: none;
-  text-align: center;
-  line-height: 30px;
-   margin-top: -10px;
-   width: 100%;
+  text-align: center; 
+  width: 100%;
+  margin-right: 30px; 
 }
 
+/* Hero section with login */
 
-p {
-    font-size: 50px;
-    color: rebeccapurple;
-    font-family: "Kurale", sans-serif;
+body {
+  margin: 0; 
+  background-image: url("https://picsum.photos/id/1057/2000/2000"); 
+  
 }
 
+/* Adjust header container in the middle of Hero section */ 
 
-signbar ul {
-  display: flex;
-  margin: 0;
+ 
+.container_h2 { 
+/*    margin: 10px;    */
+    padding: 0;    
+   font-variant: small-caps;   
+   font-size: 30px; 
+   text-align: center; 
+   margin: 120px 0;  
+  
+} 
+
+signupbar ul {
+  display: flex; 
+  margin: 10px; 
   justify-content: center;
 }
 
-signbar li {
-   display: inline;    
-}
-  
- signbar a {
-  padding: 1em 1em;
-  display: block;
-  background-image: url("https://picsum.photos/id/109/1500/1500");  
-/*   background-image: linear-gradient(lightblue, grey); */
+signupbar li {
+  display: inline;  
+/*   margin: 1px 0;   */
+}   
+
+signupbar a {
+  padding: 1em 1em;  
+/*   display: block; */
+  background-image: url("https://picsum.photos/id/443/300/300");   
   border: 1px solid black;
   color: black;
   text-decoration: none;
-  text-align: center;
+  text-align: center; 
   line-height: 30px;
-   margin-top: -10px;
-   width: 100%;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
 } 
-  
-signbar a:hover {
-    background-image: linear-gradient(lightblue, red);
+
+signupbar a:hover {
+    background-image: linear-gradient(rebeccapurple, lightblue);
 }
 
-/* Footer Section */
- footer {
+/* Footer Section settings */
+  footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: lightblue;
-  opacity: 0.8; 
+  opacity: 0.8;  
   color: black;
   text-align: center;
-   padding: 0.5em 0.5em;
+  padding: 0.5em 0.5em;
+  font-family: "Kurale", sans-serif; 
 }
+</style>
+<header>
+  <div class="header_container">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
+    <li class="fas fa-umbrella-beach fa-4x" style="font-size:40px;color:black;"></li>
+    <h1>Travel Experts</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+      <li class="wide"></i><a href="login.html"><i class="fas fa-sign-in-alt"></i>Log In</a></li>
+      <li><a href="#gallery"><i class="fas fa-images"></i>Gallery</a></li>
+      <li><a href="register.html"> <i class="fa fa-registered" aria-hidden="true"></i>Register</a</li>
+      <li><a href="contact.html"><i class="fas fa-file-signature"></i></i>Contact Us</a></li>
+    </ul>
+  </nav>
 
-    </style>
-</head>
-<body>
-    <header>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <li class="fas fa-umbrella-beach fa-5x" style="font-size:50px;color: black;"></li>
-  <h1>Travel Experts</h1>
 </header>
-<main>
- <nav>
-  <ul>
-    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-    <li class="wide"></i><a href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
-    <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
-    <li><a href="register.html"><i class="fa fa-registered" aria-hidden="true"></i> Register</a></li>
-  <li><a href="contact.html"><i class="fas fa-file-signature"></i></i> Contact Us </a></li>
-  </ul>
-</nav>
-   <p>Explore the whole world with travel experts!</p>   
-    
-  <signbar>
-  <ul>
-    <li><a class="signbar" href="#"></i> SIGN UP FOR FREE</a></ul>
-  </ul>
- </signbar>
-       </main>
-
-<footer>
-  &copy; 2020 Vadim Savenkov
-</footer>
-
+<body>
+  <main>
+<div class="container_h2">
+  <h2>Explore the world with travel experts!</h2>
+</div> 
+      <signupbar>
+      <ul>
+        <li><a class="signupbar"<a href="register.html"></i> SIGN UP FOR FREE</a>
+      </ul>
+    </signupbar>
+  </main>
 </body>
+<footer>
+&copy; 2020 Vadim Savenkov
+</footer>
 </html>
