@@ -31,7 +31,7 @@ https://picsum.photos/
 
 The original design started from identifying the information displayed on the index.html using HTML. The idea was to create a basic home page with header, hero section and responsive navigation.
 
-In the <header>, I included the website logo as well as navigation tab. I have dicided to locate my navigation panel in the middile of the header instead of following a common practice to place it on the right side of the page header.
+In the header section, I included the website logo as well as navigation tab. I have dicided to locate my navigation panel in the middile of the header instead of following a common practice to place it on the right side of the page header.
  
  I used a main element to locate a title, hero section image and signup bar. In order wrap the elements of the hero section a simple div was used for separation and adjustment in the middle of the page.The same approach was used to create login and registration page. Primary navigation was highlighting rthe current page if on Register or Login.
  
