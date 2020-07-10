@@ -35,7 +35,7 @@ In the <header>, I included the website logo as well as navigation tab. I have d
  
  I used a main element to locate a title, hero section image and signup bar. In order wrap the elements of the hero section a simple div was used for separation and adjustment in the middle of the page.The same approach was used to create login and registration page. Primary navigation was highlighting rthe current page if on Register or Login.
  
-While the # HTML part was relatively straightforward, the # CSS part was quit challenging, especially while building login and Register pages.
+While the HTML part was relatively straightforward, the CSS part was quit challenging, especially while building login and Register pages.
 Some links were quite helpful to find the right combination of adjusting parameters to center the elements of the containers.
 
 In order to highlight some elements I was using background images istead of background colors. All the pictures were taken from Lorem Picsum.
