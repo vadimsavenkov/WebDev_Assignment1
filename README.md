@@ -33,11 +33,9 @@ The original design started from identifying the information displayed on the in
 
 In the <header>, I included the website logo as well as navigation tab. I have dicided to locate my navigation panel in the middile of the header instead of following a common practice to place it on the right side of the page header.
  
- I used a <main> element to locate a title, hero section image and signup bar. In order wrap the elements of the hero section a simple <div> was used for separation and adjustment in the middle of the page.
+ I used a main element to locate a title, hero section image and signup bar. In order wrap the elements of the hero section a simple div was used for separation and adjustment in the middle of the page.The same approach was used to create login and registration page. Primary navigation was highlighting rthe current page if on Register or Login.
  
- The same approach was used to create login and registration page. Primary navigation was highlighting rthe current page if on Register or Login.
- 
-While the mark up part was relatively straightforward, the css part was quit challenging, especially while building login and Register pages.
+While the # HTML part was relatively straightforward, the # CSS part was quit challenging, especially while building login and Register pages.
 Some links were quite helpful to find the right combination of adjusting parameters to center the elements of the containers.
 
 In order to highlight some elements I was using background images istead of background colors. All the pictures were taken from Lorem Picsum.
